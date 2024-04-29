@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- quantity selector link -->
+    <link href="https://cdn.jsdelivr.net/npm/boosted@5.2.3/dist/css/boosted.min.css" rel="stylesheet">
+    <!-- quantity selector link end -->
+</head>
+
+<body>
+    <!-- Header section starts -->
+    <header id="header-nav">
+
+        <a href="index.html" class="logo"><i class="fa-solid fa-person-dress-burst"></i>foodie</a>
+
+        <div id="menu-bar" class="fa-solid fa-bars-staggered"></div>
+
+        <div class="navbar-1">
+            <a href="#mens">Mens</a>
+            <a href="#womens">Womens</a>
+            <a href="#kids">Kids</a>
+            <a href="products.html">Oversized T-Shirts</a>
+        </div>
+        <div class="menu-colm-3">
+            <ul class="dsply-flex mar-bt-0">
+                <li>
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search">
+                </li>
+                <li id="custom-dropdown">
+                    <div class="dropdown">
+                        <button class="" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
+                            aria-expanded="true" style="padding: 10px 0px;">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Track order</a></li>
+                            <li><a class="dropdown-item" href="#">returnn / exchange</a></li>
+                            <li><a class="dropdown-item" href="#">contact us</a></li>
+                            <li><a class="dropdown-item" href="#">reviews</a></li>
+                            <li class="text-center">
+                                <a href="#" class="primary-btn">logIn or signUp</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li id="custom-modal">
+                    <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                        aria-controls="staticBackdrop">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count">2</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- Header section ends -->
+
+    <!-- Hero section start -->
+
+    <section id="hero-section">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="images/banner/h-s-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/banner/h-s-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner/h-s-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span> -->
+            </button>
+        </div>
+    </section>
+
+    <!-- Hero section ends -->
+
+    <!-- gallery Section starts -->
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">New <span>Arrivals</span></h1>
+        <h6 class="sub-heading">explore latest drops <i class="fa-solid fa-arrow-right-long"></i></h6>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/products/mens/f6.jpg" alt="">
+                <div class="content">
+                    <h3>Co-Ord Sets</h3>
+                    <p>Manufacture, Care and Fit . 100% Combed Cotton (Bio-Washed and Pre-Shrunk) </p>
+                    <a href="#" class="primary-btn">for men</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/16.jpg" alt="">
+                <div class="content">
+                    <h3>summer t-shirt</h3>
+                    <p> Manufacture, Care and Fit. 100% Combed Cotton (Bio-Washed and Pre-Shrunk)</p>
+                    <a href="#" class="primary-btn">for men</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/19.jpg" alt="">
+                <div class="content">
+                    <h3>Hoodies </h3>
+                    <p>Manufacture, Care and Fit .</p>
+                    <p>You can't go wrong with Oversized Sweatshirt! Dress it up with a pair of denims or dress it down
+                        with a pair of joggers.</p>
+                    <a href="#" class="primary-btn">for men</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/24.jpg" alt="">
+                <div class="content">
+                    <h3>Oversized t-shits </h3>
+                    <p>Manufacture, Care and Fit . 100% Combed Cotton (Bio-Washed and Pre-Shrunk) </p>
+                    <p class="text-ecllipse">An oversized fit crew neck t-shirt featuring short sleeves and a drop
+                        shoulder detail.</p>
+                    <a href="#" class="primary-btn">for men</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery Section ends -->
+
+    <!-- category section list start -->
+    <section class="category-section pad-lr-100">
+        <h1 class="heading">shop for <span>men</span></h1>
+        <div class="box-container">
+            <div>
+                <img src="images/category/men-1.jpg" alt="">
+                <h3>oversized t-shirt</h3>
+            </div>
+            <div>
+                <img src="images/category/men-2.jpg" alt="">
+                <h3>joggers</h3>
+            </div>
+            <div>
+                <img src="images/category/men-3.jpg" alt="">
+                <h3>t-shirt</h3>
+            </div>
+            <div>
+                <img src="images/category/men-5.jpg" alt="">
+                <h3>Hoodies</h3>
+            </div>
+            <div>
+                <img src="images/category/men-4.jpg" alt="">
+                <h3>co-ord sets</h3>
+            </div>
+        </div>
+        <h1 class="heading">shop for <span>women</span></h1>
+        <div class="box-container">
+            <div>
+                <img src="images/category/women-1.jpg" alt="">
+                <h3>oversized t-shirt</h3>
+            </div>
+            <div>
+                <img src="images/category/women-2.jpg" alt="">
+                <h3>Hoodies</h3>
+            </div>
+            <div>
+                <img src="images/category/women-3.jpg" alt="">
+                <h3>co-ord sets</h3>
+            </div>
+            <div>
+                <img src="images/category/women-5.jpg" alt="">
+                <h3>T-Shirts Dresses</h3>
+            </div>
+            <div>
+                <img src="images/category/women-4.jpg" alt="">
+                <h3>t-shirt</h3>
+            </div>
+        </div>
+        <h1 class="heading">shop for <span>kids</span></h1>
+        <div class="box-container">
+            <div>
+                <img src="images/category/men-1.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/category/men-2.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/category/men-3.jpg" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- category section list ends -->
+
+    <!-- Banner section starts-->
+    <section class="bg-img">
+        <div class="bg-img-collection"></div>
+    </section>
+    <!-- Banner section ends-->
+
+    <!-- our best section list starts -->
+    <section class="our-best-seller pad-lr-100">
+        <h1 class="heading">our <span>Bestsellers</span></h1>
+        <h6 class="sub-heading">Don't miss out Top Selling styles <i class="fa-solid fa-arrow-right-long"></i></h6>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/products/mens/f1.jpg" alt="">
+                <div class="content">
+                    <h3>Be Free Classic Fit Shirt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="price-cart">
+                        <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/f2.jpg" alt="">
+                <div class="content">
+                    <h3>Be Free Classic Fit Shirt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="price-cart">
+                        <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/f3.jpg" alt="">
+                <div class="content">
+                    <h3>Be Free Classic Fit Shirt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="price-cart">
+                        <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/f4.jpg" alt="">
+                <div class="content">
+                    <h3>Be Free Classic Fit Shirt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="price-cart">
+                        <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/f5.jpg" alt="">
+                <div class="content">
+                    <h3>Be Free Classic Fit Shirt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="price-cart">
+                        <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/f6.jpg" alt="">
+                <div class="content">
+                    <h3>Be Free Classic Fit Shirt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="price-cart">
+                        <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/n7.jpg" alt="">
+                <div class="content">
+                    <h3>Be Free Classic Fit Shirt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="price-cart">
+                        <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/products/mens/n4.jpg" alt="">
+                <div class="content">
+                    <h3>Be Free Classic Fit Shirt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="price-cart">
+                        <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mar-tp-10">
+            <a href="#" class="primary-btn">shop all productsn</a>
+        </div>
+
+    </section>
+
+    <!-- our best section list ends -->
+
+    <!-- SHOP BY FANDOM collection start -->
+
+    <section class="fandom-collection pad-lr-100">
+        <h1 class="heading">shop by <span>fandom</span></h1>
+        <div id="carouselExampleControlsNoTouching" class="carousel slide web-view" data-bs-touch="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                            <img src="images/products/fandom/fandom-1.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                        <div class="">
+                            <img src="images/products/fandom/fandom-2.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                        <div class="">
+                            <img src="images/products/fandom/fandom-3.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                            <img src="images/products/fandom/fandom-4.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                        <div class="">
+                            <img src="images/products/fandom/fandom-5.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                        <div class="">
+                            <img src="images/products/fandom/fandom-2.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+            </button>
+        </div>
+
+
+
+        <div id="carouselExampleControlsNoTouching-1" class="carousel slide mobile-view" data-bs-touch="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                            <img src="images/products/fandom/fandom-1.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                        <img src="images/products/fandom/fandom-2.jpg" class="d-block w-100 img-style" alt="...">
+                    </div>
+                    </div>                    
+                </div>
+                <div class="carousel-item">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                        <img src="images/products/fandom/fandom-3.jpg" class="d-block w-100 img-style" alt="...">
+                    </div>
+                    </div>                    
+                </div>
+                <div class="carousel-item">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                            <img src="images/products/fandom/fandom-4.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                            <img src="images/products/fandom/fandom-5.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                            <img src="images/products/fandom/fandom-2.jpg" class="d-block w-100 img-style" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching-1"
+                data-bs-slide="prev">
+                <span class="" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching-1"
+                data-bs-slide="next">
+                <span class="" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SHOP BY FANDOM collection end -->
+
+
+    <!-- Footer Section starts -->
+
+    <div class="footer">
+
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fa-solid fa-person-dress-burst"></i> foodie</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatum,
+                    quidem non veritatis iste fugit expedita inventore possimus id deserunt.</p>
+                <h3>get in touch</h3>
+                <div class="share mar-bt-5">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Categories</h3>
+                <a href="#" class="links">Men</a>
+                <a href="#" class="links">women</a>
+                <a href="#" class="links">kids</a>
+                <a href="#" class="links">oversized t-shirt</a>
+            </div>
+            <div class="box">
+                <h3>need help</h3>
+                <a href="#home" class="links"><i class="fa-solid fa-arrow-right-long"></i>track your order</a>
+                <a href="#home" class="links"><i class="fa-solid fa-arrow-right-long"></i>Returns & Exchanges</a>
+                <a href="#home" class="links"><i class="fa-solid fa-arrow-right-long"></i>Chat on WhatsApp</a>
+                <a href="#home" class="links"><i class="fa-solid fa-arrow-right-long"></i>Contact Us</a>
+                <a href="#home" class="links"><i class="fa-solid fa-arrow-right-long"></i>FAQs</a>
+
+            </div>
+            <div class="box">
+                <h3>company</h3>
+                <a href="#" class="links">Shipping Policy</a>
+                <a href="#" class="links">Privacy Policy</a>
+                <a href="#" class="links">Terms of Service</a>
+                <!-- <input type="email" placeholder="your email" class="email">
+                <button class="btn">subscribe</button>
+                <img src="Assets/payment.png" class="payment-img" alt=""> -->
+            </div>
+        </div>
+        <div class="credit">© 2024 NOBERO. All Rights Reserved by Pratyaya E-commerce Pvt. Ltd.</div>
+    </div>
+
+    <!-- Footer Section Ends -->
+
+
+    <a href="#hero-section" class="fas fa-angle-up" id="scroll-top"></a>
+
+<script>
+    window.onscroll = () =>{
+    menu.classList.toggle("fa-times");
+    navBar.classList.toggle("active");
+
+    if(window.scrollY > 50){
+        document.querySelector("#scroll-top").classList.add('active')
+    }else{
+        document.querySelector("#scroll-top").classList.remove('active')
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- modal for cart page starts -->
+
+    <div class="offcanvas offcanvas-end modal-wth-md" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 id="staticBackdropLabel"> Shopping Cart (2)</h5>
+            <button type="" class="" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart-time">
+                <h6>sale ends in : 05 : 00m 0: 10s</h6>
+            </div>
+            <div class="cart-item-list">
+                <div class="bord-btm">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                            <img src="images/products/mens/19.jpg" alt="">
+                        </div>
+                        <div class=" pad-0" id="price-list">
+                            <h3>Be Free Classic Fit T-Shirt</h3>
+                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                            <p>size : <span>S</span></p>
+                            <p>color : <span>white</span></p>
+                            <label>Lowest price in last 30 days</label>
+                            <div class="dsply-flex-space-bt">
+                                <div class="input-group quantity-selector">
+                                    <input type="number" id="inputQuantitySelector" class="form-control"
+                                        aria-live="polite" data-bs-step="counter" name="quantity" title="quantity"
+                                        value="0" min="0" max="10" step="1" data-bs-round="0"
+                                        aria-label="Quantity selector">
+                                    <button type="button" class="btn btn-icon btn-secondary"
+                                        aria-describedby="inputQuantitySelector" data-bs-step="down" disabled="">
+                                        <span class="visually-hidden">Step down</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon btn-secondary"
+                                        aria-describedby="inputQuantitySelector" data-bs-step="up">
+                                        <span class="visually-hidden">Step up</span>
+                                    </button>
+                                </div>
+                                <div class="remove-cart">
+                                    <h6>remove</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bord-btm">
+                    <div class="cart-itm-colm">
+                        <div class="">
+                            <img src="images/products/mens/21.jpg" alt="">
+                        </div>
+                        <div class=" pad-0" id="price-list">
+                            <h3>Be Free Classic Fit T-Shirt</h3>
+                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                            <p>size : <span>S</span></p>
+                            <p>color : <span>white</span></p>
+                            <label>Lowest price in last 30 days</label>
+                            <div class="dsply-flex-space-bt">
+                                <div class="input-group quantity-selector">
+                                    <input type="number" id="inputQuantitySelector" class="form-control"
+                                        aria-live="polite" data-bs-step="counter" name="quantity" title="quantity"
+                                        value="0" min="0" max="10" step="1" data-bs-round="0"
+                                        aria-label="Quantity selector">
+                                    <button type="button" class="btn btn-icon btn-secondary"
+                                        aria-describedby="inputQuantitySelector" data-bs-step="down" disabled="">
+                                        <span class="visually-hidden">Step down</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon btn-secondary"
+                                        aria-describedby="inputQuantitySelector" data-bs-step="up">
+                                        <span class="visually-hidden">Step up</span>
+                                    </button>
+                                </div>
+                                <div class="remove-cart">
+                                    <h6>remove</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-coupans">
+                <div class="coupan-list">
+                    <img src="images/products/mens/icon-gift-box.svg" alt="">
+                    Have Coupons? <span>Use them in checkout</span>
+                </div>
+            </div>
+            <div class="related-product">
+                <h1>You may also like</h1>
+
+                <div id="carouselExampleControlsNoTouching-1" class="carousel slide" data-bs-touch="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cart-itm-colm">
+                                <div class="">
+                                    <img src="images/products/mens/16.jpg" class="d-block w-100 img-style" alt="...">
+                                    <div class="content">
+                                        <h3>Be Free Classic Fit Shirt</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <div class="price-cart">
+                                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="images/products/mens/8.jpg" class="d-block w-100 img-style" alt="...">
+                                    <div class="content">
+                                        <h3>Be Free Classic Fit Shirt</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <div class="price-cart">
+                                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cart-itm-colm">
+                                <div class="">
+                                    <img src="images/products/mens/19.jpg" class="d-block w-100 img-style" alt="...">
+                                    <div class="content">
+                                        <h3>Be Free Classic Fit Shirt</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <div class="price-cart">
+                                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="images/products/mens/23.jpg" class="d-block w-100 img-style" alt="...">
+                                    <div class="content">
+                                        <h3>Be Free Classic Fit Shirt</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <div class="price-cart">
+                                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cart-itm-colm">
+                                <div class="">
+                                    <img src="images/products/mens/24.jpg" class="d-block w-100 img-style" alt="...">
+                                    <div class="content">
+                                        <h3>Be Free Classic Fit Shirt</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <div class="price-cart">
+                                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="images/products/mens/25.jpg" class="d-block w-100 img-style" alt="...">
+                                    <div class="content">
+                                        <h3>Be Free Classic Fit Shirt</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <div class="price-cart">
+                                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cart-itm-colm">
+                                <div class="">
+                                    <img src="images/products/mens/26.jpg" class="d-block w-100 img-style" alt="...">
+                                    <div class="content">
+                                        <h3>Be Free Classic Fit Shirt</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <div class="price-cart">
+                                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="images/products/mens/f1.jpg" class="d-block w-100 img-style" alt="...">
+                                    <div class="content">
+                                        <h3>Be Free Classic Fit Shirt</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <div class="price-cart">
+                                            <h4>₹499 <del>₹1000</del> <span>50% off</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carsoul-left" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching-1" data-bs-slide="prev">
+                        <span class="arrow-style" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                    </button>
+                    <button class="carousel-control-next carsoul-right" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching-1" data-bs-slide="next">
+                        <span class="arrow-style" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                    </button>
+                </div>               
+            </div>
+            <div style="margin: 15px 0px;">
+                <img src="images/products/mens/secure-transaction.svg" alt="">
+            </div>
+            <div class="order-summary">
+                <div>
+                    <h2>order summary</h2>
+                    <div class="cart-itm-colm-bt">
+                        <div class="">
+                            <p>total MRP</p>
+                        </div>
+                        <div class="">
+                            <p class="text-right">₹ 4,577.00</p>
+                        </div>
+                    </div>
+                    <div class="cart-itm-colm-bt">
+                        <div class="">
+                            <p>Bag Discount</p>
+                        </div>
+                        <div class="">
+                            <p class="text-right">-₹ 2,290.00</p>
+                        </div>
+                    </div>
+                    <div class="cart-itm-colm-bt">
+                        <div class="">
+                            <p>Coupon Discount</p>
+                        </div>
+                        <div class="">
+                            <p class="text-right">₹ 0.00</p>
+                        </div>
+                    </div>
+                    <div class="cart-itm-colm-bt">
+                        <div class="">
+                            <p>shipping charge</p>
+                        </div>
+                        <div class="">
+                            <h6 class="text-right">free</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cart-itm-colm-bt">
+                        <div class="">
+                            <h5>total payable</h5>
+                        </div>
+                        <div class="">
+                            <h5 class="text-right">₹2,287</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="margin: 15px 0 0 0px;">
+                <img src="images/products/mens/delivery-sec.svg" alt="" width="100%">
+            </div>
+            <div class="grand-total">
+                <div class="">
+                    <h1>₹2,287</h1>
+                    <p>Total payable</p>
+                </div>
+                <div class="">
+                    <a href="#" class="primary-btn">proceed to pay</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal for cart page ends -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
